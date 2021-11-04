@@ -1,10 +1,11 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3333
+    url: jdbc:mysql://localhost:3333/final_quiz
     username: root
     password: finalquiz
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: update
     show-sql: true
