@@ -1,0 +1,19 @@
+version: "3.0"
+
+services:
+  quiz:
+    image: mysql:8.0.22
+    container_name: final_quiz
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: finalquiz
+    ports:
+      - '3333:3306'
+  quiz_test:
+    image: mysql:8.0.22
+    container_name: final_quiz_test
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: finalquiztest
+    ports:
+      - '3334:3306'
