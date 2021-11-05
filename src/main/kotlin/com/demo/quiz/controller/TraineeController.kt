@@ -2,7 +2,7 @@ package com.demo.quiz.controller
 
 import com.demo.quiz.dto.TraineeDto
 import com.demo.quiz.service.TraineeService
-import com.demo.quiz.vo.Trainee
+import com.demo.quiz.vo.TraineeVo
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -17,7 +17,7 @@ class TraineeController {
     private lateinit var traineeService: TraineeService
 
     @PostMapping
-    fun create(@RequestBody traineeDto: TraineeDto): Trainee {
+    fun create(@RequestBody traineeDto: TraineeDto): TraineeVo {
         return traineeService.create(traineeDto)
     }
 }

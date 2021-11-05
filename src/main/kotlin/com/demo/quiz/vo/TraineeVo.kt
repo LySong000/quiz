@@ -1,6 +1,6 @@
 package com.demo.quiz.vo
 
-class Trainee {
+class TraineeVo {
 
     var id: Int = 0
 
